@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bingo Card Maker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bingo Card Maker</h1>
+        <p>Step 1: Adjust the size of the card </p>
+        <p>Step2: Add enough tiles to fill out the card </p>
+        <p>Step 3: Click generate! </p>
+        <!-- image here -->
+    </header>
+
+    <optionsContainer>
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+            <option value="3x3">3x3</option>
+            <option value="4x4">4x4</option>
+            <option value="5x5">5x5</option>
+        </select>
+
+        <label for="tileInput">Tile Contents:</label>
+        <input type="text" id="tileInput" name="tileInput">
+        <button type="button" onclick="addTile()">Add new Tile</button>
+        <button type="button" onclick="generateCard()">Generate</button>
+    </optionsContainer>
+
+    <div id="tiles"></div>
+
+    <footer>
+        <p>Created by: William Chamberlain </p>
+        <a href="https://github.com/wchamberlain8/BingoMaker">Github</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

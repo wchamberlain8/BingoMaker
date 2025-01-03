@@ -1,0 +1,25 @@
+header {
+    background-color: #006eff;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1, p {
+    color: black;
+}
+
+footer {
+    background-color: #45474b;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: yellow;
+}
