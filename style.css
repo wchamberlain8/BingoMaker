@@ -1,11 +1,40 @@
 header {
-    background-color: #006eff;
+    background-color: #0D3B66;
     color: white;
     padding: 1em;
     text-align: center;
 }
 
 header h1, p {
+    color: #faf0ca;
+}
+
+optionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+label {
+    min-width: 100px; 
+    text-align: right; 
+}
+
+tilesContainer{
+    display: list-item;
+}
+
+tilesContainer p{
     color: black;
 }
 

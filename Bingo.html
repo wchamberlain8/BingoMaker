@@ -9,26 +9,37 @@
     <header>
         <h1>Bingo Card Maker</h1>
         <p>Step 1: Adjust the size of the card </p>
-        <p>Step2: Add enough tiles to fill out the card </p>
+        <p>Step 2: Add enough tiles to fill out the card </p>
         <p>Step 3: Click generate! </p>
         <!-- image here -->
     </header>
 
     <optionsContainer>
-        <label for="size">Size:</label>
-        <select id="size" name="size">
-            <option value="3x3">3x3</option>
-            <option value="4x4">4x4</option>
-            <option value="5x5">5x5</option>
-        </select>
-
-        <label for="tileInput">Tile Contents:</label>
-        <input type="text" id="tileInput" name="tileInput">
-        <button type="button" onclick="addTile()">Add new Tile</button>
-        <button type="button" onclick="generateCard()">Generate</button>
+        <div class="form-group">
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="3x3">3x3</option>
+                <option value="4x4">4x4</option>
+                <option value="5x5">5x5</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="tileInput">Tile Contents:</label>
+            <input type="text" id="tileInput" name="tileInput">
+        </div>
+    
+        <div class="form-group">
+            <button type="button" onclick="addTile()">Add new Tile</button>
+            <button type="button" onclick="generateCard()">Generate</button>
+        </div>
     </optionsContainer>
+    
 
-    <div id="tiles"></div>
+    <tilesContainer>
+        <h2>Current Tiles: </h2>
+        <ul id="tiles"></ul>
+    </tilesContainer>
 
     <footer>
         <p>Created by: William Chamberlain </p>
