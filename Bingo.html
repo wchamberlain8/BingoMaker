@@ -15,29 +15,29 @@
     </header>
 
     <optionsContainer>
-        <div class="form-group">
+        <sizeContainer>
             <label for="size">Size:</label>
             <select id="size" name="size">
                 <option value="3x3">3x3</option>
                 <option value="4x4">4x4</option>
                 <option value="5x5">5x5</option>
             </select>
-        </div>
+        </sizeContainer>
     
-        <div class="form-group">
+        <inputContainer>
             <label for="tileInput">Tile Contents:</label>
             <input type="text" id="tileInput" name="tileInput">
-        </div>
-    
-        <div class="form-group">
             <button type="button" onclick="addTile()">Add new Tile</button>
+        </inputContainer>
+        
+        <generateContainer>
             <button type="button" onclick="generateCard()">Generate</button>
-        </div>
+        </generateContainer>
     </optionsContainer>
     
 
     <tilesContainer>
-        <h2>Current Tiles: </h2>
+        <h2>Current Tiles - <span id="tileCount">0</span>/<span id="maxTiles">9 </h2>
         <ul id="tiles"></ul>
     </tilesContainer>
 

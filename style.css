@@ -9,6 +9,8 @@ header h1, p {
     color: #faf0ca;
 }
 
+/* #FF7E6B #B497D6 #4FB0C6 */
+
 optionsContainer {
     display: flex;
     flex-direction: column;
@@ -19,11 +21,6 @@ optionsContainer {
     margin-bottom: 20px;
 }
 
-.form-group {
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
-}
 
 label {
     min-width: 100px; 

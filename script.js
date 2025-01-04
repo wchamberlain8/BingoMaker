@@ -1,3 +1,24 @@
+let tileManager = {
+    currentCount: 0,
+    maxTiles: 9
+};
+
+function updateMaxTiles() {
+    const size = document.getElementById("size").value;
+    switch (size) {
+        case "3x3":
+            tileManager.maxTiles = 9;
+            break;
+        case "4x4":
+            tileManager.maxTiles = 16;
+            break;
+        case "5x5":
+            tileManager.maxTiles = 25;
+            break;
+    }
+    updateTileDisplay();
+}
+
 //function to add a new tile to the tile list
 function addTile() {
     var tile = document.getElementById("tileInput").value;
@@ -25,6 +46,11 @@ function addTile() {
     newTile.appendChild(deleteButton);
 
     tiles.appendChild(newTile);
+}
+
+function updateTileDisplay() {
+    document.getElementById("tileCount").textContent = tileManager.currentCount;
+    document.getElementById("maxTiles").textContent = tileManager.maxTiles;
 }
 
 //Function for generating the bingo card
